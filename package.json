@@ -4,17 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build  --webpack",
-    "start": "next start",
-
-  "check-path": "node -e \"console.log('cwd:', process.cwd()); console.log('real:', require('fs').realpathSync(process.cwd())); console.log('INIT_CWD:', process.env.INIT_CWD); console.log('PWD:', process.env.PWD); console.log('NODE_PATH:', process.env.NODE_PATH)\"",
-
-  "check-deps": "node -e \"console.log('Next:', require('next/package.json').version); console.log('React:', require('react/package.json').version); console.log('React DOM:', require('react-dom/package.json').version)\""
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "framer-motion": "^12.23.12",
     "gsap": "^3.13.0",
-    "next": "15.5.0",
+    "next": "15.5.21",
     "react": "19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-countup": "^6.5.3",
