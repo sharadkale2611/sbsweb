@@ -621,19 +621,19 @@ export const Course5 = () => {
     id: number;
     name: string;
     title: string;
-    // lessons: number;
-    // reviews: number;
-    // students: number;
-    // teacher?: string;
-    // teacherImage?: string;
-    // price?: number;
-    // image: string;
+    lessons?: number;
+    reviews?: number;
+    students?: number;
+    teacher?: string;
+    teacherImage?: string;
+    price?: number;
+    image: string;
   }[] = [
     {
       id: 1,
       name: "Arts and humanities ",
       title: "Academic disciplines exploring human culture, expression, and experience through critical, historical, and creative methods",
-      // lessons: 23,
+      lessons: 23,
       // reviews: 9,
       // students: 673,
       image: "/assets/images/course/course-4/1.png",
