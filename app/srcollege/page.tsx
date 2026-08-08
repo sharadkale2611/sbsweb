@@ -6,14 +6,14 @@ import { Course5 } from "@/components/Course";
 import { Features1 } from "@/components/Features";
 import { Funfact2 } from "@/components/Funfact";
 import { Partner1 } from "@/components/Partner";
+import SrCollegeLayout from "@/components/sr-college/SrCollegeLayout";
 import { Testimonial3 } from "@/components/Testimonial";
 import { WhyChooseArea3, WhyChooseArea5 } from "@/components/WhyChooseArea";
 import EdunaLayout from "@/layout/EdunaLayout";
 import Link from "next/link";
 const page = () => {
   return (
-    <EdunaLayout header={3} footer={2}>
-        
+    <SrCollegeLayout>
       {/* <section className="ed-hero ed-hero--style3">
         <div className="owl-carousel ed-hero__slider">
           Single Slider 
@@ -83,39 +83,24 @@ const page = () => {
       </section> */}
 
 
-{/* 
-
-    Home 
-    About #
-        * about1 *              * about2 *          * about3 *
-         link 1                     link 1              link 1
-         link 1                     link 1              link 1
-         link 1                     link 1              link 1
-         link 1                     link 1              link 1
-         link 1                     link 1              link 1
-
-    Contact
-        -dfdfkds
-
-
-*/}
 
 
 
 
-      <Partner1 containerClass="ed-partner section-gap section-bg-color-1" />
 
+      
       <WhyChooseArea3 />
-      {/* <Funfact2 /> */}
-      {/* <Category2 /> */}
-      {/* <Course5 /> */}
-      {/* <CallToAction2 /> */}
-      {/* <Features1 /> */}
-      {/* <WhyChooseArea5 /> */}
-      {/* <Testimonial3 /> */}
+      <Funfact2 />  
+      <Course5 />
+      <Partner1 containerClass="ed-partner section-gap section-bg-color-1" />
+      <Category2 />
+      <CallToAction2 />
+      <Features1 />
+      <WhyChooseArea5 />
+      <Testimonial3 />
       {/* <Contact /> */}
-      {/* <Blog1 /> */}
-    </EdunaLayout>
+      <Blog1 />
+    </SrCollegeLayout>
   );
 };
 export default page;
