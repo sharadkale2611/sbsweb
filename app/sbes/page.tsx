@@ -20,7 +20,7 @@ export default function AboutPage() {
           </div>
 
           {/* Right Content */}
-          <div className="about-content" className="text-justify">
+          <div className="about-content text-justify" >
             <h2>About Us</h2>
             <p>
               Established in 1915, Saraswati Bhuvan Education Society has immensely
