@@ -5,9 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --webpack",
-    "start": "next start",
-    "check-path": "node -e \"console.log('cwd:', process.cwd()); console.log('real:', require('fs').realpathSync(process.cwd()))\""
-
+    "start": "next start"
   },
   "dependencies": {
     "framer-motion": "^12.23.12",
