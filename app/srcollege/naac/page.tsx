@@ -4,8 +4,7 @@ export default function AboutPage() {
   return (
     <CollegeLayout>
    
-
-
+      <div></div>
 
     </CollegeLayout>
   );
