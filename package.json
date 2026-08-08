@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+
+  "check-path": "node -e \"console.log('cwd:', process.cwd()); console.log('real:', require('fs').realpathSync(process.cwd())); console.log('INIT_CWD:', process.env.INIT_CWD); console.log('PWD:', process.env.PWD); console.log('NODE_PATH:', process.env.NODE_PATH)\"",
+
+  "check-deps": "node -e \"console.log('Next:', require('next/package.json').version); console.log('React:', require('react/package.json').version); console.log('React DOM:', require('react-dom/package.json').version)\""
   },
   "dependencies": {
     "framer-motion": "^12.23.12",
