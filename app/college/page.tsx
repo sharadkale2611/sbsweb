@@ -15,7 +15,7 @@ export default function AboutPage() {
       {/* Institutional Overview */}
       <section className="about-overview">
         <div className="container overview-grid">
-          <div align="justify">
+          <div className="text-justify">
             <h2>Institutional Overview</h2>
             <p>
              &nbsp; &nbsp; &nbsp; Today we are living in the borderless world seemingly made small by the wonders of 

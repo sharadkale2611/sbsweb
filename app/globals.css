@@ -966,3 +966,7 @@ border-bottom:1px solid #e4e4e4;
 .committee-table tbody tr:nth-child(even){
 background:#f3f3f3;
 }
+
+.text-justify {
+  text-align: justify;
+}
