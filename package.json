@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "check-next-env": "node -e \"console.log('cwd:',process.cwd()); console.log('next:',require.resolve('next')); console.log('react:',require.resolve('react')); console.log('react-dom:',require.resolve('react-dom')); console.log('next version:',require('next/package.json').version); console.log('react version:',require('react/package.json').version); console.log('react-dom version:',require('react-dom/package.json').version)\""
   },
   "dependencies": {
     "framer-motion": "^12.23.12",
