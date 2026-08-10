@@ -6,6 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "check-module-path": "node -e \"console.log(require.resolve('next')); console.log(require.resolve('react')); console.log(require.resolve('react-dom')); console.log(require.resolve('next/dist/shared/lib/utils')); console.log(require.resolve('next/dist/shared/lib/side-effect'))\"",
     "check-env": "node -e \"console.log('PWD:',process.env.PWD); console.log('INIT_CWD:',process.env.INIT_CWD); console.log('HOME:',process.env.HOME); console.log('USERPROFILE:',process.env.USERPROFILE); console.log('NODE_PATH:',process.env.NODE_PATH); console.log('PATH:',process.env.PATH)\"",
     "check-webpack": "node -e \"console.log('webpack:',require.resolve('webpack')); console.log('webpack version:',require('webpack/package.json').version)\""
   },
