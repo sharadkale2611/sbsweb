@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "check-tree": "npm ls react react-dom next --all",    
+    "check-tree": "npm ls react react-dom next --all",  
+    "check-runtime": "node -e \"const v8=require('v8'); console.log('Node:',process.version); console.log('Platform:',process.platform); console.log('Arch:',process.arch); console.log('NODE_ENV:',process.env.NODE_ENV); console.log('NODE_OPTIONS:',process.env.NODE_OPTIONS); console.log('Heap:',Math.round(v8.getHeapStatistics().heap_size_limit/1024/1024)+' MB'); console.log('execPath:',process.execPath);\"",  
     "check-versions": "node -e \"console.log('cwd:',process.cwd()); console.log('next:',require('next/package.json').version); console.log('react:',require('react/package.json').version); console.log('react-dom:',require('react-dom/package.json').version); console.log('next path:',require.resolve('next')); console.log('react path:',require.resolve('react')); console.log('react-dom path:',require.resolve('react-dom'));\""
   },
   "dependencies": {
