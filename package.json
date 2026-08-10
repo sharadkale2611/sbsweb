@@ -6,6 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
+    "check-tree": "npm ls react react-dom next --all",    
     "check-versions": "node -e \"console.log('cwd:',process.cwd()); console.log('next:',require('next/package.json').version); console.log('react:',require('react/package.json').version); console.log('react-dom:',require('react-dom/package.json').version); console.log('next path:',require.resolve('next')); console.log('react path:',require.resolve('react')); console.log('react-dom path:',require.resolve('react-dom'));\""
   },
   "dependencies": {

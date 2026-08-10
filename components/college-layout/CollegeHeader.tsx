@@ -35,8 +35,9 @@ export default function ArtsCoursesPage() {
   // const [openCourse, setOpenCourse] = useState(null);
   const [openCourse, setOpenCourse] = useState<number | null>(null);
 
+    return <header>College Header</header>;
+
   return (
-    <header>
     <header>
       <div className="min-h-screen bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white py-16 px-4">
 
@@ -128,7 +129,6 @@ export default function ArtsCoursesPage() {
           </div>
         </div>
       </div>
-    </header>
     </header>
   );
 }
