@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import CollegeLayout from "@/components/college-layout/CollegeLayout";
 
 const data = [
   {
@@ -37,7 +36,7 @@ export default function ArtsCoursesPage() {
   const [openCourse, setOpenCourse] = useState<number | null>(null);
 
   return (
-    <CollegeLayout>
+    <header>
       <div className="min-h-screen bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white py-16 px-4">
 
         {/* TITLE */}
@@ -128,6 +127,6 @@ export default function ArtsCoursesPage() {
           </div>
         </div>
       </div>
-    </CollegeLayout>
+    </header>
   );
 }
